@@ -9,6 +9,7 @@ License:	GPLv2+
 Group:		Graphics
 BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
 BuildRequires:  gtk+2-devel >= 2.9.0
+BuildRequires:	libxslt-proc
 BuildRequires:  libexiv-devel
 
 %description
