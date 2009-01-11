@@ -1,8 +1,9 @@
 Name: gpscorrelate
 Summary: GPS photo tagging application 
-Version: 1.5.6
-Release: %mkrel 3
+Version: 1.5.8
+Release: %mkrel 1
 Source0:	http://freefoote.dview.net/linux/%{name}-%{version}.tar.gz
+Patch0:		gpscorrelate-1.5.8-makefile.diff
 URL:		http://freefoote.dview.net/linux_gpscorr.html
 License:	GPLv2+
 Group:		Graphics
@@ -15,11 +16,11 @@ This program correlates digital camera photos with GPS data in GPX format.
 
 %prep
 %setup -q
+%patch0 -p1
 
 %build
+%make LDFLAGS="%{?ldflags}" CFLAGS="%{optflags}"
 
-%make
-										
 %install
 rm -rf $RPM_BUILD_ROOT 
 
