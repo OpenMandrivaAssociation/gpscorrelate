@@ -1,7 +1,7 @@
 Summary:	GPS photo tagging application
 Name:		gpscorrelate
 Version:	1.6.1
-Release:	5
+Release:	6
 License:	GPLv2+
 Group:		Graphics
 Url:		http://freefoote.dview.net/linux_gpscorr.html
