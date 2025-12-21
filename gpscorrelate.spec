@@ -7,6 +7,7 @@ Group:		Graphics
 Url:		https://dfandrich.github.io/gpscorrelate/
 Source0:	https://github.com/dfandrich/gpscorrelate/releases/download/%{version}/gpscorrelate-%{version}.tar.xz
 Patch0:		gpscorrelate-2.0-exiv2-0.28.patch
+BuildRequires:	make
 BuildRequires:	xsltproc
 BuildRequires:	docbook-style-xsl
 BuildRequires:	pkgconfig(exiv2)
