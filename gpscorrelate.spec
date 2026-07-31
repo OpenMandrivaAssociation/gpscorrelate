@@ -1,12 +1,12 @@
 Summary:	GPS photo tagging application
 Name:		gpscorrelate
-Version:	2.0
-Release:	2
+Version:	2.3
+Release:	1
 License:	GPLv2+
 Group:		Graphics
 Url:		https://dfandrich.github.io/gpscorrelate/
 Source0:	https://github.com/dfandrich/gpscorrelate/releases/download/%{version}/gpscorrelate-%{version}.tar.xz
-Patch0:		gpscorrelate-2.0-exiv2-0.28.patch
+# dropped (no longer applies): Patch0:		gpscorrelate-2.3-exiv2-0.28.patch
 BuildRequires:	make
 BuildRequires:	xsltproc
 BuildRequires:	docbook-style-xsl
